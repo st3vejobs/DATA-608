@@ -9,3 +9,4 @@ plotly
 dash_core_components
 dash_html_components
 gunicorn
+jinja2
