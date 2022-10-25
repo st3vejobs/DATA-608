@@ -50,4 +50,7 @@ def update_figure(Borough,Species):
     fig = px.histogram(new_trees, x="health", title = f"Street Tree ({Species}) Health for {Borough}")
     return fig
 
-app.run_server(debug = True) #mode='inline'
+
+if __name__ == "__main__": app.run_server(debug=False, host='0.0.0.0', port=8050)
+    
+#app.run_server(debug = True) #mode='inline'
