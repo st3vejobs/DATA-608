@@ -1,1 +1,1 @@
-web: gunicorn tree_health:server
+web: gunicorn tree_stewardship:server
