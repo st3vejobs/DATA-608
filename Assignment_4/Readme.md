@@ -6,5 +6,7 @@
 
 This app is available to display the health of different types of street trees in each borough. 
 
-#### Heroku App Street Tree Health by Stewardship: 
+#### Heroku App Street Tree Health by Stewardship: https://street-tree-stewardship.herokuapp.com
+
+This app is available to display the health of different street trees, grouped by borough and stewardship status. 
 
