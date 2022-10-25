@@ -15,7 +15,7 @@ import gunicorn
 df = trees
 
 app = Dash(__name__)
-server = app.server
+
 app.layout = html.Div([
     html.H1("Street Tree Health by Borough"),
     dcc.Graph(id='graph'),
@@ -29,12 +29,12 @@ app.layout = html.Div([
             ])
     ]),
     html.Label([
-        "Species",
+        "Stewardship_Status",
         dcc.Dropdown(
-            id='species-dropdown', clearable=False,
-            value='red maple', options=[
+            id='stewardship-dropdown', clearable=False,
+            value='None', options=[
                 {'label': c, 'value': c}
-                for c in list(trees['spc_common'].unique())
+                for c in list(trees['steward'].unique())
             ])
     ]),
 ])
@@ -42,12 +42,12 @@ app.layout = html.Div([
 @app.callback(
     Output('graph', 'figure'),
     [Input("Borough-dropdown", "value")],
-    [Input("species-dropdown", "value")]
+    [Input("stewardship-dropdown", "value")]
 )
-def update_figure(Borough,Species):
+def update_figure(Borough,Stewardship_Status):
     new_trees = trees[trees.boroname == Borough]
-    new_trees = new_trees[new_trees.spc_common == Species]
-    fig = px.histogram(new_trees, x="health", title = f"Street Tree ({Species}) Health for {Borough}")
+    new_trees = new_trees[new_trees.steward == Stewardship_Status]
+    fig = px.histogram(new_trees, x="health", title = f"Street Tree Stewardship Impact on Health for {Borough}")
     return fig
 
 
