@@ -4,4 +4,8 @@ dash-html-components==2.0.0
 dash-table==5.0.0
 Flask==1.1.2
 Flask-Compress==1.13
-
+pandas
+plotly.express
+dash_core_components
+dash_html_components
+dash.dependencies
