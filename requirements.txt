@@ -4,12 +4,5 @@ dash-html-components==2.0.0
 dash-table==5.0.0
 Flask==1.1.2
 Flask-Compress==1.13
-ipython-genutils==0.2.0
-matplotlib @ file:///opt/concourse/worker/volumes/live/f7797860-f8aa-410c-4a56-72315954816b/volume/matplotlib-base_1603378002957/work
-mccabe==0.6.1
-numpy @ file:///opt/concourse/worker/volumes/live/5572694e-967a-4c0c-52cf-b53d43e72de9/volume/numpy_and_numpy_base_1603491881791/work
-numpydoc @ file:///tmp/build/80754af9/numpydoc_1605117425582/work
+ipython-genutils==0.2.0=
 olefile==0.46
-pandas @ file:///opt/concourse/worker/volumes/live/f14cf8c4-c564-4eff-4b17-158e90dbf88a/volume/pandas_1602088128240/work
-pandocfilters @ file:///opt/concourse/worker/volumes/live/c330e404-216d-466b-5327-8ce8fe854d3a/volume/pandocfilters_1605120442288/work
-py @ file:///tmp/build/80754af9/py_1593446248552/work
