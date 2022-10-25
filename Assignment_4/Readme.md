@@ -1,7 +1,10 @@
-# For Attempted App Deployment:
+# For App Deployment:
 
 ### Please refer to the "trees-apps" branch of Data-608.
 
-#### Heroku App: https://street-tree-dash.herokuapp.com
+#### Heroku App Street Tree Health by Borough: https://street-tree-dash.herokuapp.com
 
-This app is still not launching properly as of Monday October 24, 2022.
+This app is available to display the health of different types of street trees in each borough. 
+
+#### Heroku App Street Tree Health by Stewardship: 
+
